@@ -37,7 +37,8 @@ const Navbar = () => {
     {
       name: " Resume",
       route: "Resume",
-      className: "nav-link resume"
+      className: "nav-link resume",
+      id:"resume-button-1 resume-link-1"
     }
   ];
 
@@ -51,17 +52,18 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
+      <nav id="nav-menu"
         className={
           darkMode
             ? "bg-white border-gray-200 z-50 shadow-lg md:px-8 px-1 fixed w-full top-0"
             : "bg-gray-700 border-gray-200 z-50 shadow-lg md:px-8 px-1 fixed w-full top-0"
         }
       >
-        <div className="flex justify-between items-center py-2 md:py-4 md:px-2 pl-2 mx-auto">
+        <div id="nav-menu" className="flex justify-between items-center py-2 md:py-4 md:px-2 pl-2 mx-auto">
           <div className="flex items-center cursor-pointer">
             <a
               href="/"
+              id="user-detail-name"
               className={
                 darkMode
                   ? "text-xl font-medium text-decoration-none whitespace-nowrap text-black"

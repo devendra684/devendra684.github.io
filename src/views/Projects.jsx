@@ -8,8 +8,8 @@ const Projects = () => {
 
   return (
     <div
-      id="projects"
-      className={darkMode ? "bg-white text-black" : "bg-gray-900 text-white"}
+      id="projects" 
+      className={ darkMode ? "bg-white text-black" : "bg-gray-900 text-white"}
     >
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4  pt-24 pb-12">
         <h2 className="text-5xl font-bold px-4 md:px-0 text-center">
@@ -18,11 +18,13 @@ const Projects = () => {
         <h4 className="mt-16 text-3xl font-semibold text-blue-600">
           {/* What I Built */}
         </h4>
-        <div className="mt-8 flex justify-between items-stretch flex-wrap">
-          <Card />
-          <Card2 />
-          <Card3 />
-          <Card4 />
+        <div 
+          class="project-card"
+          className=" mt-8 flex justify-between items-stretch flex-wrap">
+          <Card class="project-card"/>
+          <Card2 class="project-card"/>
+          <Card3 class="project-card"/>
+          <Card4 class="project-card"/>
         </div>
       </div>
     </div>

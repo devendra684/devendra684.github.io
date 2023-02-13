@@ -6,9 +6,12 @@ const About = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div id="about" className={darkMode === true ? "bg-white" : "bg-gray-900"}>
+    <div 
+    id="about" 
+    className= {darkMode === true ? "bg-white" : "bg-gray-900"}>
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 md:mt-0 pt-24 pb-12">
-        <h2
+        <h2 
+        id="about" 
           className={
             darkMode
               ? "text-5xl font-bold px-4 md:px-0 text-center"
@@ -17,12 +20,18 @@ const About = () => {
         >
           About Me
         </h2>
-        <div>
+        <div> 
+            {/* user-detail-name 
+            user-detail-intro" */}
           <motion.div>
-            <h4 className="mt-12 text-3xl font-semibold text-blue-500">
+            <h4 id="about"
+              class="about.section about section"
+            className="about.section mt-12 text-3xl font-semibold text-blue-500">
               A bit about me
             </h4>
-            <p
+            
+            {/* user-detail-name  */}
+            <p id="user-detail-intro"
               className={
                 darkMode
                   ? "mt-4 text-xl text-justify text-gray-500"
@@ -31,7 +40,12 @@ const About = () => {
             >
               {/* I am a Full Stack Web Developer and currently learning from Masai School. */}
               Hi, I am Devendra Singh from Mathura, Uttar Pradesh. Currently I am learning Full Stack Web Developer from Masai School. 
-              A Full Stack Developer who loves solving problems and building projects. I am equipped with a variety of technologies and tools to help me build the best possible product.
+              A Full Stack Developer who loves solving problems and building projects. I am equipped with a variety of technologies and tools such as
+                "JavaScript",
+                "React",
+                "HTML",
+                "CSS",
+                "Express", & more to help me build the best possible product.
             </p>
           </motion.div>
         

@@ -4,7 +4,8 @@ import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
-// import { Link } from "react-scroll";
+import PDF from "../assets/Devendra_Singh_Resume.pdf";
+// import download from "../assets/download";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
 
@@ -34,28 +35,29 @@ const Home = () => {
               <span className="block text-blue-500 z-0 lg:inline">
                 <Typical
                   steps={[
-                    "Front End Develper",
-                    1000,
-                    "Full Stack Developer",
-                    1000,
                     "Front End Developer",
                     1000,
                     "Full Stack Developer",
-                    1000,
+                    1000
+                    // "Front End Developer",
+                    // 1000,
+                    // "Full Stack Developer",
+                    // 1000,
                   ]}
                   loop={Infinity}
                 />
               </span>
             </h1>
-            <p
+            {/* <p
               className={
                 darkMode
                   ? "mt-3 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am an Aspiring Front-End / Full-Stack Developer. I am currently learning Full-Stack Web Development from Masai School.
-            </p>
+                I am an Aspiring Front-End / Full-Stack Developer. 
+                I am currently learning Full-Stack Web Development from Masai School. 
+            </p> */}
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
                 <a
@@ -72,18 +74,18 @@ const Home = () => {
                 {/* <Link  */}
                   <a 
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10" 
-                  // to="https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link"
-                  // to="/"
-                  // >
-                  // {/* <a  */}
-                  href="https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link"
+                  href={PDF}
+                  download={"Devendra_Singh_Resume.pdf"}
                   target = "_blank"
                   rel="noopener noreferrer"
+                  onClick={()=>{
+                    window.open("https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link");
+                  }}
                   >
-                  Resume
+                  <p >Resume 
+                    {/* <img src="../assets/download.png" alt="download_logo" />  */}
+                    </p>
                   </a>
-                  {/* Resume */}
-                {/* </Link> */}
               </div>
             </div>
           </div>

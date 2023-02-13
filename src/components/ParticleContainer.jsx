@@ -7,4 +7,4 @@ const ParticleContainer = () => {
   )
 }
 
-export default ParticleContainer
+export default ParticleContainer;

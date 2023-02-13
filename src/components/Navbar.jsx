@@ -12,23 +12,33 @@ const Navbar = () => {
     {
       name: "Home",
       route: "/",
+      className: "nav-link home"
     },
     {
       name: "About",
       route: "about",
+      className: "nav-link about"
     },
     {
-      name: "Services",
-      route: "services",
+      name: "Skills",
+      route: "skills",
+      className: "nav-link skills"
     },
     {
       name: "Projects",
       route: "projects",
+      className: "nav-link projects"
     },
     {
       name: "Contact",
       route: "contact",
+      className: "nav-link contact"
     },
+    {
+      name: " Resume",
+      route: "resume",
+      className: "nav-link resume"
+    }
   ];
 
   function toggleTheme() {
@@ -59,6 +69,7 @@ const Navbar = () => {
               }
             >
               {`<Devendra Singh/>`}
+              
             </a>
           </div>
           <div class="hidden justify-between items-center w-full md:flex md:w-auto ">

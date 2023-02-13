@@ -3,6 +3,13 @@
 *.aar
 *.ap_
 *.aab
+cypress/screenshots
+cypress/videos
+node_modules
+after_spec_results.json
+package-lock.json
+results.json
+submissionData.json
 
 # Files for the ART/Dalvik VM
 *.dex

@@ -36,7 +36,7 @@ const Navbar = () => {
     },
     {
       name: " Resume",
-      route: "resume",
+      route: "Resume",
       className: "nav-link resume"
     }
   ];

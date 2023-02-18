@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { ThemeContext } from "../themeProvider";
 import { motion, AnimatePresence } from "framer-motion";
 import Hamburger from "hamburger-react";
+import PDF from "../assets/Devendra_Singh_Resume.pdf";
 
 const Navbar = () => {
   const theme = useContext(ThemeContext);
@@ -12,27 +13,27 @@ const Navbar = () => {
     {
       name: "Home",
       route: "/",
-      className: "nav-link home"
+      class: "home"
     },
     {
       name: "About",
       route: "about",
-      className: "nav-link about"
+      class: "about"
     },
     {
       name: "Skills",
       route: "skills",
-      className: "nav-link skills"
+      class: "skills"
     },
     {
       name: "Projects",
       route: "projects",
-      className: "nav-link projects"
+      class: "projects"
     },
     {
       name: "Contact",
       route: "contact",
-      className: "nav-link contact"
+      class: "contact"
     }
   ];
 
@@ -53,7 +54,7 @@ const Navbar = () => {
             : "bg-gray-700 border-gray-200 z-50 shadow-lg md:px-8 px-1 fixed w-full top-0"
         }
       >
-        <div id="nav-menu" className="flex justify-between items-center py-2 md:py-4 md:px-2 pl-2 mx-auto">
+        <div  className="flex justify-between items-center py-2 md:py-4 md:px-2 pl-2 mx-auto">
           <div className="flex items-center cursor-pointer">
             <a
               href="/"
@@ -78,6 +79,7 @@ const Navbar = () => {
                 <li className="cursor-pointer">
                   <Link
                     to={el.route}
+                    class={el.class}
                     activeClass={"text-white bg-blue-500"}
                     spy={true}
                     smooth={true}
@@ -92,7 +94,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li className="cursor-pointer">
-                    <a id="resume-link-2"
+                    <a id="resume-button-1"
                     activeClass={"text-white bg-blue-500"}
                     spy={true}
                     smooth={true}
@@ -101,10 +103,16 @@ const Navbar = () => {
                         ? "block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
                         : "block py-2 px-3 text-white hover:bg-blue-500 hover:text-black rounded-md"
                     }
-                      target = "_blank"
-                      rel="noopener noreferrer"
-                      href="https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link">
-                    Resume
+                      // href="https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link"
+                        href={PDF}
+                        download={"PDF"}
+                        target = "_blank"
+                        rel="noopener noreferrer"
+                        onClick={()=>{
+                          window.open("https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link");
+                        }}
+                        >
+                          Resume
                     </a>
                 </li>
             </ul>

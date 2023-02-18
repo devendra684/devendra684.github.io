@@ -15,7 +15,6 @@ const About = () => {
     className= {darkMode === true ? "bg-white" : "bg-gray-900"}>
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 md:mt-0 pt-24 pb-12 ">
         <h2 
-        id="about" 
           className={ 
             darkMode
               ? "text-5xl font-bold px-4 md:px-0 text-center "
@@ -23,8 +22,9 @@ const About = () => {
           }
         >
             <p 
+              class="about section"
               className="text-5xl font-bold border-b-4 border-blue-500 p-2 inline" >
-                About Me
+                About
             </p>
           
         </h2>
@@ -32,13 +32,14 @@ const About = () => {
             {/* user-detail-name 
             user-detail-intro" */}
           <motion.div
-              class="about.section about section">
+              // class="about.section about section"
+              >
             {/* <h4 id="about"
               class="about.section about section"
             className="about.section mt-12 text-3xl font-semibold text-blue-500">
               A bit about me
             </h4> */}
-          <div class="home-img"
+          <div
               style={{ 
                   // width:"40%", 
                   margin: "auto",

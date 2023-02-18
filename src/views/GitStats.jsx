@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-// import {Card, Card2, Card3, Card4} from "../components/Card";
 import { ThemeContext } from "../themeProvider";
 
 const GitStats = () => {
@@ -26,31 +25,45 @@ const GitStats = () => {
           </div> 
       <div 
           className="flex justify-center mt-10" width="70%" border="1px solid grey">
+
           <img className="w-full" 
             src="https://ghchart.rshah.org/devendra684"  alt="devendra684-calendar" data-aos="fade-right" />
       </div>
       <div className="flex justify-center mt-10">
             <p 
-              id="github-streak-stats"
               className="text-3xl font-semi-bold border-b-2 border-blue-500 p-2 inline" data-aos="fade-right" >
-                My GitHub Statistics
+                GitHub Streak Stats
               </p>
             </div>
       <div className="flex justify-center mt-10">
-          <img  id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=devendra684&show_icons=true&locale=en"  alt="devendra684-states" data-aos="fade-right" />
+            <img  id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com?user=devendra684"
+            alt="devendra684-states" data-aos="fade-right" />
       </div> 
       <div 
-          id="github-top-langs"
           className="flex justify-center mt-10">
             <p className="text-3xl font-semi-bold border-b-2 border-blue-500 p-2 inline" data-aos="fade-right">
-                GitHub Streak </p>
+                GitHub Stats Card</p>
         </div> 
       <div className="flex justify-center mt-10">
-      {/* <img width="60%" height="200" align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=devendra684&" alt="devendra684" /> */}
-      <img paddingLeft="30px" id="github-streak-stats"
-      src="https://github-readme-streak-stats.herokuapp.com/?user=devendra684&" alt='devendra684-streak' data-aos="fade-right"/>
+
+        <img paddingLeft="30px" 
+        id="github-stats-card" 
+        src="https://github-readme-stats.vercel.app/api?username=devendra684" alt='devendra684-streak' data-aos="fade-right"/>
+      
       </div>
+      <div className="flex justify-center mt-10">
+            <p 
+              className="text-3xl font-semi-bold border-b-2 border-blue-500 p-2 inline" data-aos="fade-right" >
+                Top Languages
+              </p>
+            </div>
+      <div className="flex justify-center mt-10">
+            
+            <img  id="github-top-langs" 
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=devendra684"
+            alt="github-top-langs" data-aos="fade-right" />
+      </div> 
       
     </div>
       </div>

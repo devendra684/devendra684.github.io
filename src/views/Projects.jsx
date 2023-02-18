@@ -15,13 +15,17 @@ const Projects = () => {
           class="project-card"
           className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4  pt-24 pb-12">
         <h2 className="text-5xl font-bold px-4 md:px-0 text-center">
-          Projects
+          {/* Projects */}
+          <p 
+              className="text-5xl font-bold border-b-4 border-blue-500 p-2 inline" >
+                Projects
+            </p>
         </h2>
         <h4 className="mt-16 text-3xl font-semibold text-blue-600">
           {/* What I Built */}
         </h4>
         <div 
-          className="mt-8 flex justify-between items-stretch flex-wrap">
+          className="project-card mt-8 flex justify-between items-stretch flex-wrap">
           <Card />
           <Card2 />
           <Card3 />
@@ -29,12 +33,12 @@ const Projects = () => {
         </div>
 
       </div>
-      <div class="project-card">
+      {/* <div class="project-card">
         </div>
         <div class="project-card">
         </div>
         <div class="project-card">
-        </div>
+        </div> */}
     </div>
   );
 };

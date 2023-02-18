@@ -33,12 +33,6 @@ const Navbar = () => {
       name: "Contact",
       route: "contact",
       className: "nav-link contact"
-    },
-    {
-      name: " Resume",
-      route: "Resume",
-      className: "nav-link resume",
-      id:"resume-button-1 resume-link-1"
     }
   ];
 
@@ -97,7 +91,24 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
+              <li className="cursor-pointer">
+                    <a id="resume-link-2"
+                    activeClass={"text-white bg-blue-500"}
+                    spy={true}
+                    smooth={true}
+                    className={
+                      darkMode
+                        ? "block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
+                        : "block py-2 px-3 text-white hover:bg-blue-500 hover:text-black rounded-md"
+                    }
+                      target = "_blank"
+                      rel="noopener noreferrer"
+                      href="https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link">
+                    Resume
+                    </a>
+                </li>
             </ul>
+
             <div onClick={() => toggleTheme()}>
               {darkMode ? (
                 <img
@@ -115,6 +126,21 @@ const Navbar = () => {
             </div>
           </div>
 
+                {/* ------------ */}
+                {/* <div class="hidden justify-between items-center w-full md:flex md:w-auto ">
+            <ul
+              class={"flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium"}>
+                <li className="cursor-pointer">
+                    <a 
+                      target = "_blank"
+                      rel="noopener noreferrer"
+                      href="https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link">
+                    Resume
+                    </a>
+                </li>
+            </ul>
+          </div> */}
+                {/* ------------ */}
           <div className="flex md:hidden items-center">
             <div onClick={() => toggleTheme()}>
               {darkMode ? (
@@ -173,6 +199,22 @@ const Navbar = () => {
                   <li>{el.name}</li>
                 </Link>
               ))}
+              <li className="cursor-pointer">
+                    <a 
+                    activeClass={"text-white bg-blue-500"}
+                    spy={true}
+                    smooth={true}
+                    className={
+                      darkMode
+                        ? "block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
+                        : "block py-2 px-3 text-white hover:bg-blue-500 hover:text-black rounded-md"
+                    }
+                      target = "_blank"
+                      rel="noopener noreferrer"
+                      href="https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link">
+                    Resume
+                    </a>
+                </li>
             </ul>
           </motion.div>
         )}

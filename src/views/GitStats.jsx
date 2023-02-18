@@ -11,9 +11,13 @@ const GitStats = () => {
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4  pt-24 pb-12">
         <h2 className="text-5xl font-bold px-4 md:px-0 text-center">
         {/* GitStats */}
-        GitHub
-        </h2>
+        {/* GitHub */}
+            <p 
+              className="text-5xl font-bold border-b-4 border-blue-500 p-2 inline" >
+                GitHub
+            </p>
       
+        </h2>
       <div 
           className="flex justify-center mt-10">
           <p className="react-activity-calendar text-3xl font-semi-bold border-b-2 border-blue-500 p-2 inline" data-aos="fade-right">

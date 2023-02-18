@@ -16,7 +16,12 @@ const Contact = () => {
     >
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 ">
         <h2 className="text-5xl font-bold px-4 md:px-0 text-center z-0">
-          Contact
+          {/* Contact */}
+          <p 
+              className="text-5xl font-bold border-b-4 border-blue-500 p-2 inline" >
+                Contact
+            </p>
+      
         </h2>
         <div>
           <h4 className="mt-12 text-3xl font-semibold text-blue-500">

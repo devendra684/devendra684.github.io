@@ -32,6 +32,37 @@ export const Card = () => {
         <p class="project-description mb-3 font-normal text-gray-700 dark:text-gray-400">
           Online Shopping Site for Men, Women & Accessories. Choose from the best Trendiest designs & customised stylist products from Bewakoof.com
         </p>
+        {/* ---------------- */}
+        <div class="project-tech-stack"
+          style={{ 
+              // border: "1px solid red", 
+              // height: "30px", 
+              // width: "10%" 
+              marginBottom: "1.5%",
+              display: "flex",
+            }}
+        >
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="html5"
+        />
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+            alt="css3"
+        />
+
+        </div>
+        {/* ---------------- */}
         <a style={{ paddingLeft: "20px", paddingRight: "20px" }}
           href="https://github.com/devendra684/Bewakoof.com_Clone"
           class="project-github-link inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
@@ -79,6 +110,46 @@ export const Card2 = () => {
         <p class="project-description mb-3 font-normal text-gray-700 dark:text-gray-400">
           Buy international beauty products & cosmetic makeup items on BePretty, the online beauty shopping store.
         </p>
+        {/* ---------------- */}
+        <div class="project-tech-stack"
+          style={{ 
+              // border: "1px solid red", 
+              // height: "30px", 
+              // width: "10%" 
+              marginBottom: "1.5%",
+              display: "flex",
+            }}
+        >
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="html5"
+        />
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+            alt="css3"
+        />
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="javascript"
+        />
+
+        </div>
+        {/* ---------------- */}
         <a style={{ paddingLeft: "20px", paddingRight: "20px" }}
           href="https://github.com/hariom722581343/glamorous-snails-6242"
           class="project-github-link inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
@@ -120,12 +191,70 @@ export const Card3 = () => {
       <div class="p-5">
         <a href="https://zeeplay.vercel.app/">
           <h5 class="project-title mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Bewakoof.com
+          Zee Play
           </h5>
         </a>
         <p class="project-description mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Online Shopping Site for Men, Women & Accessories. Choose from the best Trendiest designs & customised stylist products from Bewakoof.com
+        Zee Play (Clone of Zee5 Website) is a Subscription-based OTT platform to access Entertainment content.
         </p>
+        {/* ---------------- */}
+        <div class="project-tech-stack"
+          style={{ 
+              // border: "1px solid red", 
+              // height: "30px", 
+              // width: "10%" 
+              marginBottom: "1.5%",
+              display: "flex",
+            }}
+        >
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="html5"
+        />
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+            alt="css3"
+        />
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="javascript"
+        />
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+            alt="react"
+        />
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://img.icons8.com/color/256/chakra-ui.png"
+            alt="chakra UI"
+        />
+
+        </div>
+        {/* ---------------- */}
         <a style={{ paddingLeft: "20px", paddingRight: "20px" }}
           href="https://github.com/devendra684/ZeePlay"
           class="project-github-link inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
@@ -173,6 +302,46 @@ export const Card4 = () => {
         <p class="project-description mb-3 font-normal text-gray-700 dark:text-gray-400">
         Get your fresh Vegetable's and Fruit's at your door step. Kimaye in Mumbai is known to satisfactorily cater to the demands of its customer base.
         </p>
+        {/* ---------------- */}
+        <div class="project-tech-stack"
+          style={{ 
+              // border: "1px solid red", 
+              // height: "30px", 
+              // width: "10%" 
+              marginBottom: "1.5%",
+              display: "flex",
+            }}
+        >
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="html5"
+        />
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+            alt="css3"
+        />
+        <img
+          style={{
+              height: "30px", 
+              width: "10%" 
+            }}
+            class="rounded-t-lg w-full"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="javascript"
+        />
+
+        </div>
+        {/* ---------------- */}
         <a style={{ paddingLeft: "20px", paddingRight: "20px" }}
           href="https://github.com/UmerAhmad9126/overconfident-unit-8852"
           class="project-github-link inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
@@ -181,7 +350,7 @@ export const Card4 = () => {
         </a>
         <a style={{ marginLeft: "40px", paddingLeft: "20px", paddingRight: "20px" }}
           href="https://jazzy-twilight-d591ed.netlify.app/"
-          class="project-tech-stack project-deployed-link inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
+          class="project-deployed-link inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
         >
           Preview
         </a>

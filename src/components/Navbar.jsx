@@ -103,9 +103,8 @@ const Navbar = () => {
                         ? "block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
                         : "block py-2 px-3 text-white hover:bg-blue-500 hover:text-black rounded-md"
                     }
-                      // href="https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link"
                         href={PDF}
-                        download={"PDF"}
+                        download={"/fp06_215-Devendra-Singh-Resume"}
                         target = "_blank"
                         rel="noopener noreferrer"
                         onClick={()=>{

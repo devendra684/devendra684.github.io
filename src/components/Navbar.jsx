@@ -105,7 +105,7 @@ const Navbar = () => {
                     }
                       // href="https://drive.google.com/file/d/1y8DE1uBgH0cHbH6rK5PmRtD1N9qjWqNf/view?usp=share_link"
                         href={PDF}
-                        download={"PDF"}
+                        download={"/fp06_215-Devendra-Singh-Resume"}
                         target = "_blank"
                         rel="noopener noreferrer"
                         onClick={()=>{

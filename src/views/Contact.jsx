@@ -10,8 +10,8 @@ const Contact = () => {
       id="contact"
       className={
         darkMode
-          ? "bg-gray-100 pt-24 md:h-screen"
-          : "bg-black pt-24 text-white md:h-screen"
+          ? "bg-gray-100 pt-24 "
+          : "bg-black pt-24 text-white "
       }
     >
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 ">
@@ -136,7 +136,7 @@ const Contact = () => {
                   className="md:ml-6 md:mr-0 mr-6 cursor-pointer mt-4 hover:scale-125 flex flex-col justify-center items-center"
                 >
                   <img id="contact-linkedin" alt="" src={el.url} />
-                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
+                  <p className="text-md mt-2 hover:hidden">{el.name}</p>
                 </a>
               ))}
             </ul>
@@ -146,7 +146,7 @@ const Contact = () => {
       <div
         className={
           darkMode
-            ? "w-full bg-white text-black text-lg py-3 flex justify-center md:mt-20"
+            ? "w-full bg-gray-400 text-black text-lg py-3 flex justify-center md:mt-20"
             : "w-full bg-gray-900 text-white text-lg py-3 flex justify-center md:mt-20"
         }
       >

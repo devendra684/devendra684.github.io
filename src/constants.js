@@ -6,7 +6,7 @@ export const techStack = [
   { name: "React", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" }, 
   { name: "Redux", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" },
   { name: "NodeJS", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" },
-  { name: "NextJS", link: "https://github.com/tandpfun/skill-icons/raw/main/icons/NextJS-Dark.svg" },
+  // { name: "NextJS", link: "https://github.com/tandpfun/skill-icons/raw/main/icons/NextJS-Dark.svg" },
   { name: "ChakraUI", link: "https://camo.githubusercontent.com/2427686c1db51fbc790b0f7ae766f96ee3715ce7e03678bc273efa721569a947/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313234343932353534313434383238363230382f727a796c556a61665f343030783430302e6a7067" },
   { name: "Bootstrap", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" },
 

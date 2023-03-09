@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.176b99b4.css",
-    "main.js": "./static/js/main.25a094fd.js",
+    "main.js": "./static/js/main.9602ef69.js",
     "static/js/496.eca39582.chunk.js": "./static/js/496.eca39582.chunk.js",
     "static/media/DevendraSingh.jpg": "./static/media/DevendraSingh.5aedd503c9b3e4e46430.jpg",
     "static/media/Devendra_Singh_Resume.pdf": "./static/media/Devendra_Singh_Resume.5d244577b8fb9f102cb3.pdf",
@@ -10,11 +10,11 @@
     "static/media/cloudDark.png": "./static/media/cloudDark.51edaa54cabe7b964ae9.png",
     "index.html": "./index.html",
     "main.176b99b4.css.map": "./static/css/main.176b99b4.css.map",
-    "main.25a094fd.js.map": "./static/js/main.25a094fd.js.map",
+    "main.9602ef69.js.map": "./static/js/main.9602ef69.js.map",
     "496.eca39582.chunk.js.map": "./static/js/496.eca39582.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.176b99b4.css",
-    "static/js/main.25a094fd.js"
+    "static/js/main.9602ef69.js"
   ]
 }

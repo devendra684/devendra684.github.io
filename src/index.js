@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+        {/* <App /> */}
+    {/* </BrowserRouter> */}
+      
+    <BrowserRouter basename={window.location.pathname || ''}>
+        <App />
+        {/* <Route exact path="/" 
+        component={Index} /> */}
+    </BrowserRouter>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

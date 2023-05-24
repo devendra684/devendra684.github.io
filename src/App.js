@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import React, { Component }  from 'react';
+import React from 'react';
+// import React, { Component }  from 'react';
 import Contact from "./views/Contact";
 import Navbar from "./components/Navbar";
 import About from "./views/About";

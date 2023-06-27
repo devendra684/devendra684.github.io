@@ -302,24 +302,24 @@ export const Card4 = () => {
       }}
       class="max-w-xl bg-white rounded-lg border border-gray-200 shadow-lg dark:bg-gray-800 dark:border-gray-700 my-8"
     >
-      <a href="https://github.com/devendra684/AppiumProject">
+      <a href="https://github.com/devendra684/MobileApp_Testing_Project/">
         <img
           style={{ 
             // border: "1px solid red", 
             height: "300px", width: "100%" }}
           class="rounded-t-lg w-full"
-          src="https://w7.pngwing.com/pngs/782/363/png-transparent-appium-hd-logo-thumbnail.png"
+          src="https://github.com/devendra684/MobileApp_Testing_Project/assets/100137935/2f405943-cac8-4119-a207-ac310d64aa82"
           alt=""
         />
       </a>
       <div class="p-5">
-        <a href="https://github.com/devendra684/AppiumProject">
+        <a href="https://github.com/devendra684/MobileApp_Testing_Project">
           <h5 class="project-title mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-          Kimaye
+          MobileApp Testing
           </h5>
         </a>
         <p class="project-description mb-3 font-normal text-gray-700 dark:text-gray-400">
-        Appium Project for Mobile App Testing. Mobile App Tested for both Emulator and Real Device.
+        MobileApp Testing of BanjaraRide & KhanAcademy Apps with Appium or WebDriver IO.
         </p>
         {/* ---------------- */}
         <div class="project-tech-stack"
@@ -331,7 +331,7 @@ export const Card4 = () => {
               display: "flex",
             }}
         >
-        <img
+        {/* <img
           style={{
               height: "30px", 
               width: "10%" ,
@@ -340,7 +340,7 @@ export const Card4 = () => {
             class="rounded-t-lg w-full"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
             alt="javascript"
-        />
+        /> */}
         <img
           style={{
               height: "30px", 
@@ -348,8 +348,8 @@ export const Card4 = () => {
               marginRight: "2%"
             }}
             class="rounded-t-lg w-full"
-            src="https://asset.brandfetch.io/idIq_kF0rb/idv3zwmSiY.jpeg?updated=1667565306852"
-            alt="Cypress"
+            src="https://media.licdn.com/dms/image/C4D12AQEZtRC0Fmthug/article-cover_image-shrink_720_1280/0/1622547563757?e=2147483647&v=beta&t=x4JzboPDaE3hsCoWH-IEWemEhi85w3ZQzD73Us2JBk0"
+            alt="WebDriverIO"
         />
         <img
           style={{
@@ -365,13 +365,13 @@ export const Card4 = () => {
         </div>
         {/* ---------------- */}
         <a style={{ paddingLeft: "20px", paddingRight: "20px" }}
-          href="https://github.com/devendra684/AppiumProject"
+          href="https://github.com/devendra684/MobileApp_Testing_Project"
           class="project-github-link inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
         >
           Github
         </a>
         <a style={{ marginLeft: "40px", paddingLeft: "20px", paddingRight: "20px" }}
-          href="https://github.com/devendra684/AppiumProject"
+          href="https://devendra684.github.io/MobileApp_Testing_Project/"
           class="project-deployed-link inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
         >
           Report

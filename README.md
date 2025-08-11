@@ -23,11 +23,6 @@ A personal portfolio website built with React to showcase my skills, experience,
 - GitHub: Calendar + streak + stats cards
 - Contact: Social and reach-out options
 
-## Contact
-
-- Portfolio: https://devendra684.github.io/
-- GitHub: https://github.com/devendra684
-
 ---
 
 This repository is my portfolio codebase.

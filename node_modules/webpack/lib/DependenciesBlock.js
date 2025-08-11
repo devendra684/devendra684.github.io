@@ -32,7 +32,7 @@ class DependenciesBlock {
 		this.dependencies = [];
 		/** @type {AsyncDependenciesBlock[]} */
 		this.blocks = [];
-		/** @type {DependenciesBlock} */
+		/** @type {DependenciesBlock | undefined} */
 		this.parent = undefined;
 	}
 
@@ -46,7 +46,6 @@ class DependenciesBlock {
 	/**
 	 * Adds a DependencyBlock to DependencyBlock relationship.
 	 * This is used for when a Module has a AsyncDependencyBlock tie (for code-splitting)
-	 *
 	 * @param {AsyncDependenciesBlock} block block being added
 	 * @returns {void}
 	 */

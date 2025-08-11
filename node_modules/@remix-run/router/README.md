@@ -4,7 +4,7 @@ The `@remix-run/router` package is a framework-agnostic routing package (sometim
 
 If you're using React Router, you should never `import` anything directly from the `@remix-run/router` - you should have everything you need in `react-router-dom` (or `react-router`/`react-router-native` if you're not rendering in the browser). All of those packages should re-export everything you would otherwise need from `@remix-run/router`.
 
-> **Warning**
+> [!WARNING]
 >
 > This router is a low-level package intended to be consumed by UI layer routing libraries. You should very likely not be using this package directly unless you are authoring a routing library such as [`react-router-dom`][react-router-repo] or one of it's other [UI ports][remix-routers-repo].
 
@@ -131,5 +131,5 @@ We use _Future Flags_ in the router to help us introduce breaking changes in an 
 [remix]: https://remix.run
 [react-router-repo]: https://github.com/remix-run/react-router
 [remix-routers-repo]: https://github.com/brophdawg11/remix-routers
-[api-development-strategy]: https://reactrouter.com/en/main/guides/api-development-strategy
+[api-development-strategy]: https://reactrouter.com/v6/guides/api-development-strategy
 [future-flags-post]: https://remix.run/blog/future-flags

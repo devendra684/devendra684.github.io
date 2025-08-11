@@ -36,14 +36,13 @@ const Home = () => {
               <span className="block text-blue-500 z-0 lg:inline ">
                 <Typical
                   steps={[
-                    "Aspiring SDET",
-                    1000,
-                    "   Aspiring SDET",
-                    1000,
+                    "QA Engineer",
+                    500,
+                    "      QA Engineer",
+                    // "   Aspiring SDET",
+                    500,
                     // "SDET",
-                    // 1000,
-                    // "Aspirant SDET",
-                    // 1000,
+                    // 500,
                   ]}
                   loop={Infinity}
                 />
@@ -56,8 +55,8 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-                I am an Aspiring Front-End / Full-Stack Developer. 
-                I am currently learning Full-Stack Web Development from Masai School. 
+                I am an QA Engineer. 
+                I am learning about AI and ML. 
             </p> */}
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (

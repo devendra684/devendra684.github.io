@@ -84,10 +84,10 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              {/* I am a Full Stack Web Developer and currently learning from Masai School. */}
-                I am a passionate Software Development Engineer in Test (SDET) with a strong focus on quality assurance, testing, and automation. Proficient in programming languages such as JavaScript and Java, I have hands-on experience with testing frameworks like TestNG and Mocha, as well as tools such as Cypress, Selenium WebDriver, and Appium for automated testing. 
+              {/* I am a QA Engineer and currently working at from Quicktouch Technologies. */}
+              Software Development Engineer in Test (SDET) with over a year of proven expertise in quality assurance, testing, and automation. Currently serving as a QA Engineer at Quicktouch Technologies Limited, I successfully implement testing strategies for enterprise ERP systems serving 4000+ users. 
                 
-                Committed to continuous learning and staying current with industry trends, I am eager to leverage my skills in agile methodologies and CI/CD pipelines to ensure the delivery of high-quality software. I am dedicated to collaborating with cross-functional teams to enhance my skills in the field of testing and automation.
+              My technical skills and specialize in manual and automation testing, API testing, and bug tracking using Jira. I have demonstrated success in enhancing testing efficiency, preventing critical bugs, and ensuring seamless user experiences across web applications and mobile platforms. Passionate about continuous learning and agile methodologies, I collaborate effectively with cross-functional teams to deliver high-quality software solutions.
             </p>
             
           </motion.div>

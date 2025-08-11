@@ -1,13 +1,15 @@
+'use strict';
 /* eslint-disable no-unused-vars -- required for functions `.length` */
 var $ = require('../internals/export');
-var global = require('../internals/global');
+var globalThis = require('../internals/global-this');
 var apply = require('../internals/function-apply');
 var wrapErrorConstructorWithCause = require('../internals/wrap-error-constructor-with-cause');
 
 var WEB_ASSEMBLY = 'WebAssembly';
-var WebAssembly = global[WEB_ASSEMBLY];
+var WebAssembly = globalThis[WEB_ASSEMBLY];
 
-var FORCED = Error('e', { cause: 7 }).cause !== 7;
+// eslint-disable-next-line es/no-error-cause -- feature detection
+var FORCED = new Error('e', { cause: 7 }).cause !== 7;
 
 var exportGlobalErrorCauseWrapper = function (ERROR_NAME, wrapper) {
   var O = {};
@@ -24,7 +26,6 @@ var exportWebAssemblyErrorCauseWrapper = function (ERROR_NAME, wrapper) {
 };
 
 // https://tc39.es/ecma262/#sec-nativeerror
-// https://github.com/tc39/proposal-error-cause
 exportGlobalErrorCauseWrapper('Error', function (init) {
   return function Error(message) { return apply(init, this, arguments); };
 });

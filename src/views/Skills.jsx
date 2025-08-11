@@ -35,7 +35,7 @@ const Skills = () => {
                     : "mt-4 text-xl text-justify text-white"
                 }
               >
-                As an aspiring Software Development Engineer in Test (SDET), I have developed my technical skills essential for quality assurance, testing, and automation. Here are some of the key skills I possess that enable me to contribute effectively to the testing process and ensure the delivery of high-quality software.
+                As an experienced Software Development Engineer in Test (SDET), I have developed comprehensive technical skills essential for quality assurance, testing, and automation. Here are some of the key skills I possess that enable me to contribute effectively to the testing process and ensure the delivery of high-quality software.
               </p>
             <motion.div class="skills-card"
             className="flex flex-wrap mt-8 flex flex-wrap justify-between ">

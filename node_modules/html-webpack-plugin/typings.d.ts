@@ -20,6 +20,7 @@ declare class HtmlWebpackPlugin {
   apply(compiler: Compiler): void;
 
   static getHooks(compilation: Compilation): HtmlWebpackPlugin.Hooks;
+  static getCompilationHooks(compilation: Compilation): HtmlWebpackPlugin.Hooks;
 
   /**
    * Static helper to create a tag object to be get injected into the dom
@@ -27,7 +28,7 @@ declare class HtmlWebpackPlugin {
   static createHtmlTagObject(
     tagName: string,
     attributes?: { [attributeName: string]: string | boolean },
-    innerHTML?: string
+    innerHTML?: string,
   ): HtmlWebpackPlugin.HtmlTagObject;
 
   static readonly version: number;
@@ -52,6 +53,8 @@ declare namespace HtmlWebpackPlugin {
      */
     chunksSortMode?:
       | "auto"
+      // `none` is deprecated and an alias for `auto` now.
+      | "none"
       | "manual"
       | ((entryNameA: string, entryNameB: string) => number);
     /**
@@ -96,7 +99,7 @@ declare namespace HtmlWebpackPlugin {
      *
      * @default 'defer'
      */
-    scriptLoading?: "blocking" | "defer" | "module";
+    scriptLoading?: "blocking" | "defer" | "module" | "systemjs-module";
     /**
      * Inject meta tags
      */
@@ -110,8 +113,8 @@ declare namespace HtmlWebpackPlugin {
         };
     /**
      * HTML Minification options accepts the following values:
-     * - Set to `false` to disable minifcation
-     * - Set to `'auto'` to enable minifcation only for production mode
+     * - Set to `false` to disable minification
+     * - Set to `'auto'` to enable minification only for production mode
      * - Set to custom minification according to
      * {@link https://github.com/kangax/html-minifier#options-quick-reference}
      */
@@ -141,7 +144,7 @@ declare namespace HtmlWebpackPlugin {
     templateParameters?:
       | false // Pass an empty object to the template function
       | ((
-          compilation: any,
+          compilation: Compilation,
           assets: {
             publicPath: string;
             js: Array<string>;
@@ -153,7 +156,7 @@ declare namespace HtmlWebpackPlugin {
             headTags: HtmlTagObject[];
             bodyTags: HtmlTagObject[];
           },
-          options: ProcessedOptions
+          options: ProcessedOptions,
         ) => { [option: string]: any } | Promise<{ [option: string]: any }>)
       | { [option: string]: any };
     /**
@@ -184,7 +187,7 @@ declare namespace HtmlWebpackPlugin {
    * Please keep in mind that the `templateParameter` options allows to change them
    */
   interface TemplateParameter {
-    compilation: any;
+    compilation: Compilation;
     htmlWebpackPlugin: {
       tags: {
         headTags: HtmlTagObject[];
@@ -209,7 +212,7 @@ declare namespace HtmlWebpackPlugin {
         styles: HtmlTagObject[];
         meta: HtmlTagObject[];
       };
-      publicPath: string,
+      publicPath: string;
       outputName: string;
       plugin: HtmlWebpackPlugin;
     }>;
@@ -218,7 +221,7 @@ declare namespace HtmlWebpackPlugin {
       headTags: HtmlTagObject[];
       bodyTags: HtmlTagObject[];
       outputName: string;
-      publicPath: string,
+      publicPath: string;
       plugin: HtmlWebpackPlugin;
     }>;
 
@@ -283,7 +286,7 @@ declare namespace HtmlWebpackPlugin {
      * E.g. `{'plugin': 'html-webpack-plugin'}`
      */
     meta: {
-      plugin?: string,
+      plugin?: string;
       [metaAttributeName: string]: any;
     };
   }

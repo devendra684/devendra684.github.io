@@ -2,9 +2,12 @@
 
 exports.__esModule = true;
 
-exports.default = function declaredScope(context, name) {
-  const references = context.getScope().references;
+const { getScope } = require('./contextCompat');
+
+/** @type {import('./declaredScope').default} */
+exports.default = function declaredScope(context, name, node) {
+  const references = (node ? getScope(context, node) : context.getScope()).references;
   const reference = references.find((x) => x.identifier.name === name);
-  if (!reference) { return undefined; }
+  if (!reference || !reference.resolved) { return undefined; }
   return reference.resolved.scope.type;
 };

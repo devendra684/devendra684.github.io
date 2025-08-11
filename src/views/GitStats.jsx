@@ -29,29 +29,27 @@ const GitStats = () => {
           <img className="w-full" 
             src="https://ghchart.rshah.org/devendra684"  alt="devendra684-calendar" data-aos="fade-right" />
       </div>
-      <div className="flex justify-center mt-10">
-            <p 
-              className="text-3xl font-semi-bold border-b-2 border-blue-500 p-2 inline" data-aos="fade-right" >
-                GitHub Streak Stats
-              </p>
-            </div>
-      <div className="flex justify-center mt-10">
-            <img  id="github-streak-stats"
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <div className="flex flex-col items-center">
+          <p 
+            className="text-3xl font-semi-bold border-b-2 border-blue-500 p-2 inline" data-aos="fade-right" >
+              GitHub Streak Stats
+          </p>
+          <img id="github-streak-stats"
             src="https://github-readme-streak-stats.herokuapp.com?user=devendra684"
-            alt="devendra684-states" data-aos="fade-right" />
-      </div> 
-      <div 
-          className="flex justify-center mt-10">
-            <p className="text-3xl font-semi-bold border-b-2 border-blue-500 p-2 inline" data-aos="fade-right">
-                GitHub Stats Card</p>
-        </div> 
-      <div className="flex justify-center mt-10">
-
-        <img paddingLeft="30px" 
-        id="github-stats-card" 
-        src="https://github-readme-stats.vercel.app/api?username=devendra684" alt='devendra684-streak' data-aos="fade-right"/>
-      
+            alt="devendra684-states" className="mt-6" data-aos="fade-right" />
+        </div>
+        <div className="flex flex-col items-center">
+          <p className="text-3xl font-semi-bold border-b-2 border-blue-500 p-2 inline" data-aos="fade-right">
+              GitHub Stats Card
+          </p>
+          <img 
+            id="github-stats-card" 
+            src="https://github-readme-stats.vercel.app/api?username=devendra684" 
+            alt='devendra684-streak' className="mt-6" data-aos="fade-right"/>
+        </div>
       </div>
+      
       {/* <div className="flex justify-center mt-10">
             <p 
               className="text-3xl font-semi-bold border-b-2 border-blue-500 p-2 inline" data-aos="fade-right" >

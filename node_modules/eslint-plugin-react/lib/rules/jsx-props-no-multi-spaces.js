@@ -6,7 +6,12 @@
 'use strict';
 
 const docsUrl = require('../util/docsUrl');
+const eslintUtil = require('../util/eslint');
 const report = require('../util/report');
+const propsUtil = require('../util/props');
+
+const getSourceCode = eslintUtil.getSourceCode;
+const getText = eslintUtil.getText;
 
 // ------------------------------------------------------------------------------
 // Rule Definition
@@ -17,6 +22,7 @@ const messages = {
   onlyOneSpace: 'Expected only one space between “{{prop1}}” and “{{prop2}}”',
 };
 
+/** @type {import('eslint').Rule.RuleModule} */
 module.exports = {
   meta: {
     docs: {
@@ -33,12 +39,12 @@ module.exports = {
   },
 
   create(context) {
-    const sourceCode = context.getSourceCode();
+    const sourceCode = getSourceCode(context);
 
     function getPropName(propNode) {
       switch (propNode.type) {
         case 'JSXSpreadAttribute':
-          return context.getSourceCode().getText(propNode.argument);
+          return getText(context, propNode.argument);
         case 'JSXIdentifier':
           return propNode.name;
         case 'JSXMemberExpression':
@@ -46,7 +52,7 @@ module.exports = {
         default:
           return propNode.name
             ? propNode.name.name
-            : `${context.getSourceCode().getText(propNode.object)}.${propNode.property.name}`; // needed for typescript-eslint parser
+            : `${getText(context, propNode.object)}.${propNode.property.name}`; // needed for typescript-eslint parser
       }
     }
 
@@ -81,7 +87,7 @@ module.exports = {
         return;
       }
 
-      const between = context.getSourceCode().text.slice(prev.range[1], node.range[0]);
+      const between = getSourceCode(context).text.slice(prev.range[1], node.range[0]);
 
       if (between !== ' ') {
         report(context, messages.onlyOneSpace, 'onlyOneSpace', {
@@ -98,14 +104,18 @@ module.exports = {
     }
 
     function containsGenericType(node) {
-      const containsTypeParams = typeof node.typeParameters !== 'undefined';
-      return containsTypeParams && node.typeParameters.type === 'TSTypeParameterInstantiation';
+      const nodeTypeArguments = propsUtil.getTypeArguments(node);
+      if (typeof nodeTypeArguments === 'undefined') {
+        return false;
+      }
+
+      return nodeTypeArguments.type === 'TSTypeParameterInstantiation';
     }
 
     function getGenericNode(node) {
       const name = node.name;
       if (containsGenericType(node)) {
-        const type = node.typeParameters;
+        const nodeTypeArguments = propsUtil.getTypeArguments(node);
 
         return Object.assign(
           {},
@@ -113,7 +123,7 @@ module.exports = {
           {
             range: [
               name.range[0],
-              type.range[1],
+              nodeTypeArguments.range[1],
             ],
           }
         );

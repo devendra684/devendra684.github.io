@@ -13,7 +13,7 @@ const About = () => {
     <div 
     id="about" 
     className= {darkMode === true ? "bg-white" : "bg-gray-900"}>
-      <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 md:mt-0 pt-24 pb-12 ">
+      <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 md:mt-0 pt-16 pb-8 ">
         <h2 
           className={ 
             darkMode
@@ -22,8 +22,7 @@ const About = () => {
           }
         >
             <p 
-              class="about section"
-              className="text-5xl font-bold border-b-4 border-blue-500 p-2 inline" >
+              className="about section text-5xl font-bold border-b-4 border-blue-500 p-2 inline" >
                 About
             </p>
           
@@ -32,10 +31,10 @@ const About = () => {
             {/* user-detail-name 
             user-detail-intro" */}
           <motion.div
-              // class="about.section about section"
+              // className="about.section about section"
               >
             {/* <h4 id="about"
-              class="about.section about section"
+              className="about.section about section"
             className="about.section mt-12 text-3xl font-semibold text-blue-500">
               A bit about me
             </h4> */}
@@ -43,12 +42,12 @@ const About = () => {
               style={{ 
                   // width:"40%", 
                   margin: "auto",
-                  marginTop: "40px",
+                  marginTop: "20px",
                   // height:"40%",
                   // border:"2px solid black",
                   borderRadius:"25px" 
                 }}> 
-            <motion.img class="home-img"
+            <motion.img
               initial="hidden"
               whileInView={"visible"}
               variants={{
@@ -71,7 +70,7 @@ const About = () => {
                   border:"2px solid black",
                   borderRadius:"22px" 
                 }}
-                className=" hidden sm:block"
+                className="home-img hidden sm:block"
             />
           </div> 
 

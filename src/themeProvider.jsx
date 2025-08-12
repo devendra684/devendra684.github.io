@@ -19,7 +19,7 @@ export function ThemeProvider(props) {
 
   return (
     <ThemeContext.Provider
-      value={{ state: false || state, dispatch: dispatch }}
+      value={{ state, dispatch }}
     >
       {props.children}
     </ThemeContext.Provider>
